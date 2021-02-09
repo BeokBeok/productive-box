@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "30 10 * * *"
+    - cron: "54 10 * * *"
 jobs:
   update-gist:
     runs-on: ubuntu-latest
@@ -13,6 +13,6 @@ jobs:
       - name: Update gist
         uses: maxam2017/productive-box@master
         env:
-          GH_TOKEN: 0e4e1bb58da9877a52f7dc6210dbdc7eba9598cd
+          GH_TOKEN: 457f13b2103ee5335b7033fbd2e6e2a54f058e25
           GIST_ID: 505cc9cb991cff475cd0f9cd6570a7ea
           LOCALE: ko-KR
